@@ -31,7 +31,7 @@ class CleanJs {
     final distDir = "dist";
     final madeWith = "Made with LunaTea -- Haxe";
     final allFiles = FileSystem.readDirectory(distDir);
-    allFiles.filter((file) -> !file.contains(".map")).iter((file) -> {
+    allFiles.filter((file) -> !file.contains(".map") && !file.contains(".min")).iter((file) -> {
       final fileNameStr = '//=============================================================================
 // $file
 //=============================================================================\n';

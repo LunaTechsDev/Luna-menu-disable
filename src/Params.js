@@ -1,17 +1,17 @@
 /*:
 @author LunaTechs - Kino
-@plugindesc A plugin that disables the menu and touch menu.
+@plugindesc A plugin that disables the menu and touch menu <LunaMenuDisable>.
 
 @target MV MZ
 
 @param disableMenu
 @text Disable Menu 
-@desc  Disable the menu from being used in-game.
-@defaul true
+@desc  Disable the menu from being used in-game (true/false).
+@default true
 
 @param disableTouchMenu
 @text Disable Touch Menu
-@desc Disable touch menu button from being used in game.
+@desc Disable touch menu button from being used in game(back button).(true/false)
 @default true
 
 
@@ -20,11 +20,7 @@
 @help
 ==== How To Use ====
 
-Simply add your image and your type of transition to the list
-of splash screens.
-
-These pictures must be in your picture folder.
-
+Simply update the plugin parameters.
 
 MIT License
 Copyright (c) 2020 LunaTechsDev

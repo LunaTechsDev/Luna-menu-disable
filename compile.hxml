@@ -1,4 +1,5 @@
 -lib LunaTea
+-lib closure
 
 -cp src
 # JS Version 
@@ -20,6 +21,17 @@
 
 # RM Version for Conditional Compilation
 # -D compileMV
+
+
+# turn on advanced compilation:
+# -D closure_advanced
+
+# -D closure_slavemode
+# turn on pretty printing:
+-D closure_prettyprint
+
+# overwrite original output rather then generating a .min.js next to it
+# -D closure_overwrite
 
 # Note you can call an hxml file inside an hxml file for build purposes.
 # For Compiling Separate JavaScript Files
