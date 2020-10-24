@@ -1,14 +1,21 @@
 /*:
 @author LunaTechs - Kino
-@plugindesc A plugin that allows you to link splash screens together<LunaMSplash>.
+@plugindesc A plugin that disables the menu and touch menu.
 
 @target MV MZ
 
+@param disableMenu
+@text Disable Menu 
+@desc  Disable the menu from being used in-game.
+@defaul true
 
-@param splashScreens
-@text Splash Screens 
-@desc The lilst of splash screens to use in your game.
-@type struct<SplashScreen>[]
+@param disableTouchMenu
+@text Disable Touch Menu
+@desc Disable touch menu button from being used in game.
+@default true
+
+
+
 
 @help
 ==== How To Use ====
@@ -38,23 +45,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE
 */
 
-/*~struct~SplashScreen:
-* @param image
-* @text Image Name
-* @desc Name of an image in your pictures folder
-* @default Actor1_1
-*
-* @param splashType
-* @text Splash Type click or timer
-* @desc The transition type of the splash screen (click or timer)
-* @default click
-*
-* @param timer
-* @text The amount of time in frames to keep the splash up when type is timer. 
-* @desc The transition type of the splash screen
-* @default 300
-* 
-*/
+
 
 
 

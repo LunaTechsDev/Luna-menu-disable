@@ -13,30 +13,21 @@ using core.NumberExtensions;
 using StringTools;
 using utils.Fn;
 
-@:native('LunaMultisplash')
-@:expose('LunaMultisplash')
+@:native('LunaMenuDisable')
+@:expose('LunaMenuDisable')
 class Main {
   public static var Params: LParams = null;
   public static var listener: EventEmitter = Amaryllis.createEventEmitter();
 
   public static function main() {
-    var plugin = Globals.Plugins.filter((plugin) -> ~/<LunaMSplash>/ig.match(plugin.description))[0];
-    var screens: Array<SplashScreen> = [];
+    var plugin = Globals.Plugins.filter((plugin) -> ~/<LunaMenuDisable>/ig.match(plugin.description))[0];
+
     var params = plugin.parameters;
-    untyped screens = JsonEx.parse(params['splashScreens']).map((screen) -> {
-      var data = JsonEx.parse(screen);
-      trace(data);
-      return {
-        backgroundImageName: data.image,
-        splashType: data.splashType.trim(),
-        time: data.timer
-      }
-    });
     Params = {
-      splashScreens: screens
+      disableTouchmenu: params['disableTouchMenu'].toLowerCase().trim() == 'true',
+      disableMenu: params['disableMenu'].toLowerCase().trim() == 'true'
     }
     trace(Params);
-    FnMacros.jsPatch(true, RmScene_Boot, SceneBoot);
   }
 
   public static function params() {

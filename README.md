@@ -1,3 +1,4 @@
-# Luna Multisplash  
+# Luna Menu Disable  
 ### Author LunaTechs - Kino
-> An RPGMakerMV/MZ plugin that allows you to show multiple splash screens one after another.
+> An RPGMakerMV/MZ plugin that disables the menu in game along with the
+ touch menu.
