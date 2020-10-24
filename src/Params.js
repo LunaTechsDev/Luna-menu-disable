@@ -9,8 +9,8 @@
 @desc  Disable the menu from being used in-game (true/false).
 @default true
 
-@param disableTouchMenu
-@text Disable Touch Menu
+@param disableTouchMenu 
+@text Disable Touch Menu (Not Implemented Yet)
 @desc Disable touch menu button from being used in game(back button).(true/false)
 @default true
 
